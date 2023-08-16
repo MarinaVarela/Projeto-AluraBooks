@@ -8,6 +8,7 @@
     color: var(--branco);
     font-weight: 300;
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 .tópicos__lista {
@@ -30,11 +31,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .tópicos__titulo {
-        font-size: 24px;
-    }
-
-    .tópicos__link {
+    .tópicos__titulo, .tópicos__link {
         font-size: 24px;
     }
 }

@@ -30,10 +30,30 @@
             </ul>
             <!-- Logo da AluraBooks -->
             <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__img">
+            <!-- H1 pra width 1024px -->
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+
+        <!-- Opções width 1024px -->
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu"><li class="opcoes__itens">Categorias</li></label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+            </ul>
+
+            <li class="opcoes__itens"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__itens"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
         <!-- div à direta -->
         <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__img"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__img container__img-fav"></a>
             <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__img"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__img"></a>
         </div>
@@ -66,6 +86,10 @@
                 <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
                 <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
             </div>
+            
+            <!-- Botões de próximo e anterior -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <!-- Card Angular -->
         <div class="card">
@@ -130,7 +154,7 @@
 
     <!-- Section tópicos -->
     <section class="tópicos">
-        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <h2 class="tópicos__titulo">Tópicos visitados recentemente</h2>
         <ul class="tópicos__lista">
             <li class="tópicos__item">
                 <a href="#" class="tópicos__link">Android</a>
@@ -158,10 +182,10 @@
             </li>
         </ul>
     </section>
-    
+
     <!-- Contato -->
     <section class="contato">
-        <div class="contato__descrição">
+        <div class="contato__descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
             <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
         </div>
@@ -169,7 +193,7 @@
     </section>
 
     <!-- Linha divisória -->
-    <hr/>
+    <hr>
 
     <!-- Footer -->
     <footer class="rodapé">
@@ -250,7 +274,7 @@
             </li>
         </ul>
     </footer>
-    
+
     <!-- Script Swiper Carrossel -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
